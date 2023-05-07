@@ -18,4 +18,4 @@ RUN set -ex \
     
 ENTRYPOINT ["sh", "/entrypoint.sh"]
 
-EXPOSE $PORT
+EXPOSE 80
