@@ -2,5 +2,5 @@
 
 set -e
 
-uvicorn app.main:app --reload --host 0.0.0.0 --timeout-keep-alive 2400
+uvicorn app.main:app --host=0.0.0.0 --port=$PORT --reload
 
