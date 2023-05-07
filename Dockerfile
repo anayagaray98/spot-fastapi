@@ -17,3 +17,5 @@ RUN set -ex \
     && pip install psycopg2-binary
     
 ENTRYPOINT ["sh", "/entrypoint.sh"]
+
+EXPOSE 8000
