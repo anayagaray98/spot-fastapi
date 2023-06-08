@@ -1,7 +1,7 @@
 # Spot FastAPI App
 
-## Sin hacer uso de docker
-Hay que crear la base de datos con las credenciales que aparecen en el archivo de variables de entorno (dev.env)
+## Without using docker
+You have to create the database with the credentials that appear in the environment variables file (dev.env)
 
 ```
 
@@ -11,8 +11,8 @@ vunicorn app.main:app --host=0.0.0.0 --reload --env-file=dev.env
 
 ```
 
-## Haciendo uso de docker
-Se debe correr lo siguiente para construir y correr el contenedor. No es necesario crear la base de datos de postgres, pues esta se crea dentro del mismo contenedor automaticamente:
+## Using docker
+The following must be run to build and run the container. It is not necessary to create the postgres database, as it is created within the same container automatically:
 
 ```
 
@@ -20,4 +20,4 @@ sudo docker-compose up -d --build
 
 ```
 
-### Para abrir el aplicativo se debe abrir la url http://127.0.0.1:8000/docs
+### To open the application you must go to the url http://127.0.0.1:8000/docs
